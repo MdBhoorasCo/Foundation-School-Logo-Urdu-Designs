@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IF Alternates - IF Else Bolean in Java</title>
+</head>
+<body>
+  
+
+  <script>
+  //Practice Exercise Metro Bus Ticketing System (IF Else Bolean in Java)  
+  let age = 4; //age of the passenger
+  let gender = 'female'; //male or female
+  let finalDiscount;
+  if(age <= 5){
+    finalDiscount = 100; //free ticket for 5 years old
+  }
+  else if(gender === 'female'){
+    finalDiscount = 50; //50% discount for females.
+  }else if(age <= 8){
+    finalDiscount = 50; //50% tickets for 6 to 8 years old
+  }else if(age >= 60){
+    finalDiscount = 30; //30% tickets for 60 OR 60 plus years old
+  }else{
+    finalDiscount = 0; // normal ticket price for all
+  }
+  console.log(`tou final Discount is ${finalDiscount}%`);
+
+    /*  if else
+    let age
+
+   /*  ternary operators
+   let age =19;
+       let result;
+       if(age>18){
+       result = 'Adult';
+       }else{
+       result = 'Kid';} 
+      let result = age>18 ? 'Adult' : 'Kid';
+       console.log(result); */
+
+    /* Gaurd operators
+    let age =0;
+    let finalAge = age || 18;  // && is used to check the first condition and || is used to check the second condition
+    console.log(age);
+    console.log(finalAge); */
+
+    /*default operators
+    let age = 0;
+    let finalAge = age ?? 18;  // && is used to check the first condition and || is used to check the second condition
+    console.log(age);
+    console.log(finalAge); */
+
+  </script>
+</body>
+</html>

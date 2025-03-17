@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bag Gst sale Total Price</title>
+</head>
+<body>
+  <div class="name-display"></div>
+  <script>
+  const myName = 'Rajesh'
+    document.querySelector('.name-display').textContent = myName;
+    console.log(myName);
+
+  const GSTTexPercentage = 18;
+  let bag_price = (15599 - (10/100*15599)) -272;
+  let jean_price = (2499 - (41/100*2499)) - 29;
+  let bag_value = Math.round ((jean_price + bag_price + 25 + 20) * (100 + GSTTexPercentage/100));
+  let bag_summary = 'you final price is - ' + bag_value + ' Pak Rupees';
+    console.log(bag_summary);
+
+</script>
+</body>
+</html>
